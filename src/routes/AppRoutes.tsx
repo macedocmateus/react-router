@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router";
 import { Home } from "../pages/Home";
 import { Products } from "../pages/Products";
-import { NoteFound } from "../pages/NotFound";
-import { Details } from "../pages/details";
+import { NotFound } from "../pages/NotFound";
+import { Details } from "../pages/Details";
 import { Layout } from "../components/Layout";
 
 export function AppRoutes() {
@@ -14,7 +14,7 @@ export function AppRoutes() {
                 <Route path="/details/:id" element={<Details />}></Route>
             </Route>
 
-            <Route path="*" element={<NoteFound />}></Route>
+            <Route path="*" element={<NotFound />}></Route>
         </Routes>
     );
 }
